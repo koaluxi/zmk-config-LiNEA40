@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -73,7 +73,7 @@
 
         DeleteKey {
             bindings = <&kp DEL>;
-            key-positions = <8 7>;
+            key-positions = <8 9>;
         };
 
         InsertKey {
@@ -113,7 +113,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
         };
     };
 
