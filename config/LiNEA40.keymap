@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -194,8 +194,8 @@
 
         SCROLL {
             bindings = <
-&kp LA(LC(UP))    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &kp PG_UP                       &kp N7  &kp N8  &kp N9   &kp NUMBER_0  &kp BACKSPACE
-&kp LA(LC(DOWN))  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp PG_DN                       &kp N4  &kp N5  &kp N6   &kp MINUS     &kp KP_DIVIDE
+&kp LA(LC(UP))    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &kp PG_UP                       &kp N7  &kp N8  &kp N9   &kp NUMBER_0  &kp KP_DIVIDE
+&kp LA(LC(DOWN))  &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &kp PG_DN                       &kp N4  &kp N5  &kp N6   &kp MINUS     &kp BACKSPACE
 &trans            &kp HOME                &trans        &kp END                  &trans                          &kp N1  &kp N2  &kp N3   &kp PLUS      &kp KP_MULTIPLY
 &trans            &trans                  &trans        &trans                   &trans     &trans    &kp RSHFT  &kp N0          &kp DOT  &kp BSPC      &kp EQUAL
             >;
