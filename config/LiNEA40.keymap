@@ -53,12 +53,22 @@
 };
 
 &trackball_listener {
+    input-processors = <&zip_xy_scaler 1 4>;
+
+    fastcusror {
+        layers = <8>;
+        input-processors = <&zip_xy_scaler 8 1>;
+    };
+
     scroller {
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             //スクロール方向を逆転,
-            <&zip_xy_to_scroll_mapper>;
+            <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 1 2
+            >;
     };
 };
 
