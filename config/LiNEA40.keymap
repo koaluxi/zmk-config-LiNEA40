@@ -64,7 +64,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,
+            //スクロール方向を逆転,,,
             <
             &zip_xy_to_scroll_mapper
             &zip_scroll_scaler 1 4
@@ -138,10 +138,10 @@
 
         default_layer {
             bindings = <
-&kp Q          &kp W         &kp E               &kp R        &kp T                                       &kp Y                 &kp U  &kp I        &kp O     &kp P
-&kp A          &kp S         &kp D               &kp F        &kp G                                       &kp H                 &kp J  &kp K        &kp L     &lt 2 ENTER
-&mt LSHFT Z    &kp X         &kp C               &kp V        &kp B                                       &kp N                 &kp M  &kp COMMA    &kp DOT   &lt 5 SLASH
-&mt LCTRL TAB  &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt 5 GRAVE  &lt 3 BACKSPACE  &lt 8 DELETE    &kp MINUS  &mt LEFT_SHIFT SPACE         &lt 6 EQUAL  &kp SEMI  &lt 4 INTERNATIONAL_1
+&kp Q            &kp W         &kp E         &kp R        &kp T                                       &kp Y                 &kp U  &kp I            &kp O      &kp P
+&kp A            &kp S         &kp D         &kp F        &kp G                                       &kp H                 &kp J  &kp K            &kp L      &lt 2 ENTER
+&mt LSHFT EQUAL  &kp Z         &kp X         &kp C        &kp V                                       &kp B                 &kp N  &kp M            &kp COMMA  &lt 5 PERIOD
+&mt LCTRL TAB    &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 GRAVE  &lt 3 BACKSPACE  &lt 8 DELETE    &kp MINUS  &mt LEFT_SHIFT SPACE         &lt 6 SEMICOLON  &kp SQT    &lt 4 SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
