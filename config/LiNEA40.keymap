@@ -57,7 +57,7 @@
 
     fastcusror {
         layers = <8>;
-        input-processors = <&zip_xy_scaler 8 1>;
+        input-processors = <&zip_xy_scaler 2 1>;
     };
 
     scroller {
@@ -67,7 +67,7 @@
             //スクロール方向を逆転,
             <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 2
+            &zip_scroll_scaler 1 4
             >;
     };
 };
