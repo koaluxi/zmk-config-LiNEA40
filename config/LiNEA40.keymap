@@ -53,11 +53,11 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_xy_scaler 1 2>;
+    input-processors = <&zip_xy_scaler 3 4>;
 
     fastcusror {
         layers = <4 8>;
-        input-processors = <&zip_xy_scaler 4 1>;
+        input-processors = <&zip_xy_scaler 3 1>;
     };
 
     scroller {
